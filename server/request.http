@@ -1,0 +1,49 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Cho Nhi",
+    "password": "1234567"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Cho Nhi",
+    "password": "1234567"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZhZDYwZDk5NjRhOTBiMDg5ZDZkNGQiLCJpYXQiOjE2MjcwNTM4OTZ9.Kgn7l-95IqGrmAYWFA2r9u6aNxCAElUBeDUXkZypIqc
+
+{
+   "title": "DEV C",
+   "description": "DEV C",
+   "url": "Lazada.com",
+    "status": "LEARNING"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGVjN2ZiZTUxOGE2MzE4NDAzMjBlZmIiLCJpYXQiOjE2MjYxMTE5MzR9.blIuI-gBTKX_8DleafKm43imr2by4PDregPPyfjq1Zg
+
+
+###
+PUT http://localhost:5000/api/posts/60eee88987292925748e1b6e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGY1OWY3ZDM1OWRhZDE4OGM0MzQzZmEiLCJpYXQiOjE2MjcwNDgwNDN9.xcXM-zxuyoA786ufruqC3EJIkItEcNfbLBa3pawCB14
+
+{
+    "title": "Hi",
+    "description": "VUEEEEEE",
+    "url": "lazada.com",
+    "status": "LEARNED"
+}
+
+###
+DELETE http://localhost:5000/api/posts/60fadf6b4bdfcb364c73b851
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGZhZDYwZDk5NjRhOTBiMDg5ZDZkNGQiLCJpYXQiOjE2MjcwNTM4OTZ9.Kgn7l-95IqGrmAYWFA2r9u6aNxCAElUBeDUXkZypIqc
